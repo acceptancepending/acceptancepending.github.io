@@ -286,18 +286,54 @@ body {
         initial-value: -5%;
     }
     
+    /*
     @keyframes scene-transition {
-        to { --radius: 105%; }
-    }
-    
-    .scene-2 {
-        -webkit-mask-image: radial-gradient(
+        0% {
+            background-image: radial-gradient(
             circle at center 65%,
             #fff calc(var(--radius) - 20%),
             transparent calc(var(--radius) + 5%)
         );
+        }
+        100% { background-image: radial-gradient(
+            circle at center 65%,
+            #fff calc(var(--radius) - 20%),
+            transparent calc(var(--radius) + 5%)
+            );
+        }
+    }
+    */
+
+    @keyframes scene-transition {
+        0% {
+            --radius: -5%;
+        }
+        100% {
+            --radius: 105%;
+        }
     }
     
+    .cover{
+        margin: auto;
+        display: block;
+        width: 900px;
+        height: 900px;
+        z-index: 4;
+        background-image: radial-gradient(
+            circle at center 65%,
+            transparent calc(var(--radius) - 20%),
+            #2E2A27 calc(var(--radius) + 5%)
+        );
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        animation: scene-transition 5s;
+        animation-timing-function: cubic-bezier(0, 0.5, 0.81, 0.13);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
     .scene-2 {
         z-index: 1;
         animation: scene-transition 5s;
@@ -305,6 +341,7 @@ body {
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         width: 100%;
+        
     }
 
     
