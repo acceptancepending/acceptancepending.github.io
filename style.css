@@ -12,7 +12,7 @@ body {
 
 .body-part1 {
     background-color: #2E2A27;
-    height: 680px;
+    height: 100px;
     z-index: -1;
 }
 
@@ -226,7 +226,7 @@ body {
         0% {
             opacity: 0;
         }
-        85% {
+        20% {
             opacity: 0;
         }
         100% {
@@ -235,7 +235,7 @@ body {
     }
 
     .home-body .header {
-        animation: header-fadein 7s linear;
+        animation: header-fadein 2s linear;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
@@ -287,7 +287,7 @@ body {
 /*#region home body*/
 
     /*#region spotlight*/
-
+      /*
     @property --radius {
         syntax: '<percentage>';
         inherits: true;
