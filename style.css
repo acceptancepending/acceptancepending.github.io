@@ -56,7 +56,7 @@ body {
         list-style: none;
         align-items: center;
         text-align: center;
-        width: 50%;
+        width: 75%;
         margin: auto;
     
         /* center main buttons in header */
@@ -66,7 +66,7 @@ body {
         transform: translate(-50%, -50%);
         border: #1D1B19 1px solid;
     
-        min-width: 600px;
+        /* min-width: 600px; */
     }
     
     .links li {
@@ -107,6 +107,7 @@ body {
             transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
             transition-duration: 400ms;
             transition-property: color;
+            font-size: 26px;
         }
         
         .header .links a:focus,
@@ -150,10 +151,10 @@ body {
     }
 
     .fa {
-        padding: 8px;
+        padding: 15px 12px;
         font-size: 20px;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         text-align: center;
         margin: 5px 8px;
         border-radius: 50%;
@@ -303,7 +304,7 @@ body {
 }
 
 .about-info p {
-    color: #B1B1B1;
+    color: #EEE1B7;
     font-size: 24px;
     margin-top: 50px;
     text-align: justify;
@@ -331,36 +332,66 @@ body {
 }
 
 .cast-body h1 {
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
     text-align: center;
     font-size: 34px;
 }
 
+.cast-body .page-break {
+    margin-bottom: 50px;
+}
+
+.multiple-shows {
+    margin: auto;
+    margin-bottom: 60px;
+    width: fit-content;
+}
+
+.multiple-shows a {
+    background-color: transparent;
+    border: solid 2px #EEE1B7;
+    color: #EEE1B7;
+    font-size: 28px;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.multiple-shows .pressed {
+    background-color: #EEE1B7;
+    color: #1D1B19;
+}
+
+.multiple-shows a:hover {
+    background-color: #EEE1B7;
+    color: #1D1B19;
+}
+
 .the-man-himself {
-    display: flex;
     margin-bottom: 100px;
     position: relative;
 }
 
 .gabe-text {
-    margin-left: 50px;
+    margin-left: 50px;    
 }
 
 .the-man-himself img {
     width: 300px;
     height: 300px;
-    
+    margin: auto;
 }
 
 .the-man-himself h3 {
     font-size: 28px;
     margin-bottom: 20px;
+    width: fit-content;
+    margin: auto;
 }
 
 .the-man-himself p {
-    font-size: 16px;
+    font-size: 28px;
+    text-align: center;
 }
 
 .member-row {
@@ -375,8 +406,8 @@ body {
 }
 
 .remaining-cast img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: auto;
     
 }
@@ -395,8 +426,15 @@ body {
     text-align: center;
 }
 
+.the-man-himself h2, .the-man-himself h4, .the-man-himself p {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
 .member {
-    width: 50%;
+    width: 100%;
     padding: 40px 20px;
 }
 
@@ -410,27 +448,27 @@ body {
     position: relative;
 }
 
-.member h2 {
-    font-size: 30px;
+.member h2, .the-man-himself h2 {
+    font-size: 36px;
     font-weight: 800;
     margin-top: 20px;
 }
 
-.member h4 {
-    font-size: 24px;
+.member h4, .the-man-himself h4 {
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
-.member p {
-    font-size: 16px;
+.member p, .the-man-himself p {
+    font-size: 28px;
 }
 
-.cast-body a {
+.remaining-cast a, .gabe-text a {
     transition-duration: 400ms;
     color: #EEE1B7;
 }
 
-.cast-body a:hover {
+.remaining-cast a:hover, .gabe-text a:hover {
     transition-duration: 400ms;
     color: #695C3C;
 }
